@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Blockly Sample App</title>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="appTitle">Coding4Therapy</h1>
+    </header>
+    <div class="appExercise">
+        <h2> Help BlueBlockly get to the Bus!</h2>
+        <h3> Practice</h3>
+        <p>Select the start square for BlueBlockly and the goal square of the Bus to create your own puzzle! </p>
+        <form id="form">
+            <label for="start">Start Square:</label>
+            <select name="start" id="start">
+                <option value="0,0">1,1</option>
+                <option value="0,1">1,2</option>
+                <option value="0,2">1,3</option>
+                <option value="0,3">1,4</option>
+                <option value="1,0">2,1</option>
+                <option value="1,2">2,3</option>
+                <option value="2,0">3,1</option>
+                <option value="2,1">3,2</option>
+                <option value="2,2">3,3</option>
+                <option value="2,3">3,4</option>
+                <option value="3,0">4,1</option>
+                <option value="3,1">4,2</option>
+                <option value="3,3">4,4</option>
+
+                
+            </select>
+            <label for="goal">Goal Square:</label>
+            <select name="goal" id="goal">
+                <option value="0,0">1,1</option>
+                <option value="0,1">1,2</option>
+                <option value="0,2">1,3</option>
+                <option value="0,3">1,4</option>
+                <option value="1,0">2,1</option>
+                <option value="1,2">2,3</option>
+                <option value="2,0">3,1</option>
+                <option value="2,1">3,2</option>
+                <option value="2,2">3,3</option>
+                <option value="2,3">3,4</option>
+                <option value="3,0">4,1</option>
+                <option value="3,1">4,2</option>
+                <option value="3,3">4,4</option> 
+            </select>
+            <button type="submit">Go!</button>
+        </form>
+    </div>
+
+    <main>
+        
+        <div class="buttonContainer">
+            <button id="runButton">Run</button>
+            <button id="resetButton">Reset</button>
+        </div>
+
+        <div class="grid">
+        </div>
+        
+
+        <div class="blockly-editor">
+            <div id="blocklyDiv" style="height: 480px; width: 400px;"></div>
+        </div>
+    </main>
+    <img id="busImage" alt="Bus">
+    <img id="bluedogImage" alt="Blue Dog">
+    <img id = "tvImage" alt="TV">
+    <img id = "catImage" alt="Cat">
+    <img id = "boneImage" alt="Bone">
+</body>
+
+</html>

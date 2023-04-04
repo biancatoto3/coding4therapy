@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Blockly Sample App</title>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="appTitle">Coding4Therapy</h1>
+    </header>
+    <div class="appExercise">
+        <h2> Help BlueBlockly get to the Bus!</h2>
+        <h3> Prediction</h3>
+        <p id="instructions"> First, predict the answer to the question below. Then, check your answer by connecting the blocks in the workspace and running the code.</p>
+        <p id="question"> What will happen to Blue if we connect and run these blocks?</p>
+        <p id="answer"> A. BlueBlockly will get distracted and miss the bus.</p>
+        <p id="answer"> B. BlueBlockly will make it to the bus. </p>
+        <p id="answer"> C. BlueBlockly will go too far and miss the bus. </p>
+    </div>
+    <main>
+        
+        <div class="buttonContainer">
+            <button id="runButton">Run</button>
+            <button id="resetButton">Reset</button>
+        </div>
+
+        <div class="grid">
+        </div>
+        
+
+        <div class="blockly-editor">
+            <div id="blocklyDiv" style="height: 480px; width: 400px;"></div>
+        </div>
+    </main>
+    <img id="busImage" alt="Bus">
+    <img id="bluedogImage" alt="Blue Dog">
+    <img id = "tvImage" alt="TV">
+</body>
+
+</html>
